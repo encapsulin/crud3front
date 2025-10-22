@@ -1,6 +1,6 @@
 import '../misc/stylebox.css';
 import '../misc/stylebutton.css';
-import React, { useEffect,useState } from 'react';
+import React, { useState } from 'react';
 import Loading from '../loading/Loading';
 import { API_BASE_URL } from "../misc/config";
 import Tree from './Tree'

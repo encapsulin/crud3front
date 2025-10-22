@@ -1,9 +1,6 @@
 import '../App.css'
 import '../misc/stylebox.css';
 
-import React, { useState, useEffect } from 'react';
-import { nestItems } from "../misc/nestItems";
-
 export default function Tree({ items }){
     return <>
         {/* <p>{JSON.stringify(items)}</p> */}
