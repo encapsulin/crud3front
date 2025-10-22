@@ -1,0 +1,54 @@
+.boxround {
+    border: 2px solid rgb(127, 127, 127);   /* visible border */
+    border-radius: 10px;       /* makes corners rounded */
+    padding: 0px;
+    /* width: 200px; */
+    /* text-align: center; */
+    margin: 5px;
+  }
+
+.boxhover:hover {
+    background-color: #3c4350;
+  }
+  
+.boxrow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.boxcol {
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    text-align: left;
+}
+
+.boxhead {
+    background-color: #3c4350;
+    text-align: center;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+  }
+.boxbody {
+    padding: 10px;
+  }
+
+.boxrowspace {
+        display: flex;               /* use flexbox */
+        flex-direction: row;         /* horizontal layout */
+        justify-content: space-between; /* push first left, second right */
+        align-items: center;         /* vertically center items */
+        width: 100%;                 /* full width container */
+        box-sizing: border-box;      /* include padding in width */
+      
+}
+
+.boxrowright {
+  display: flex;
+  flex-direction: row;     /* horizontal layout */
+  justify-content: flex-end; /* push all items to the right */
+  align-items: center;     /* vertically center items */
+  width: 100%;
+  box-sizing: border-box;
+}

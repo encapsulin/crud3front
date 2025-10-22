@@ -1,0 +1,18 @@
+[
+  {
+    "parentId": "0",
+    "pkid": "0",
+    "title": "Automotive, Garden & Industrial",
+    "id": "1",
+    "children": [
+      { "parentId": "1", "pkid": "0", "title": "Electronics", "id": "4" }
+    ]
+  },
+  {
+    "parentId": "0",
+    "pkid": "0",
+    "title": "Books, Games & Grocery",
+    "id": "2"
+  },
+  { "parentId": "0", "pkid": "0", "title": "Music & Outdoors", "id": "3" }
+]

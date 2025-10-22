@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  background-color: #3c4350;
+  color: white;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  /* justify-content:center; */
+  /* font-size: calc(10px + 2vmin); */
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+  /* padding: 0 5px 0 5px; */
+}
+.App-link:hover {
+  background-color: #424855;
+  cursor:pointer;
+}
+
+

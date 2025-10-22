@@ -1,0 +1,25 @@
+.btndelete{
+    border: 0;
+    color:red;
+}
+.btndelete:hover{
+    background-color: red ;
+    color:white;
+}
+
+.btncancel{
+    border: 0;
+}
+.btncancel:hover{
+    border: 1px solid grey;
+}
+
+.btnsubmit{
+    background-color: slategray ;
+    color:white;
+    border: 1px solid grey;
+}
+.btnsubmit:hover{
+    background-color: darkslategray ;
+
+}
