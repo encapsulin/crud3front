@@ -28,7 +28,7 @@ function App() {
         </div>
       </header>
       
-      <span >CRUD-0.1.4</span>
+      <span >CRUD-0.1.5</span>
 
 
     </div>

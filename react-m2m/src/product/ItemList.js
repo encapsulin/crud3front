@@ -37,17 +37,14 @@ export default function ItemList({ parentId,handleClick,reload,setReload }) {
           setLoading(false);
         })
 
-        setReload(false)
+        // setReload(false)
     }, [parentId,reload]); 
   
-
   if (error) return <p style={{ color: "red" }}>Error: {error}</p>;
 
   return (
     <div>       
-      
        <Loading on={loading} />
-
       {items.map((item) => (
         <Item key={item.id} item={item} handleClick={handleClick} />
       ))}
