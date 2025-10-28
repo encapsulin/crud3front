@@ -5,7 +5,7 @@ import Loading from '../loading/Loading';
 import { API_BASE_URL } from "../misc/config";
 import Tree from './Tree'
 
-export default function ItemEdit({item,setItem,fnHandleOpen,setReload,items}){
+export default function GroupEdit({item,setItem,fnHandleOpen,setReload,items}){
 
     // const [item,setItem] = useState({skid:"0","parentId":"0"})
     console.log("ItemEdit:",item)

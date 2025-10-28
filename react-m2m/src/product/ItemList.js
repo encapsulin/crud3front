@@ -43,11 +43,19 @@ export default function ItemList({ parentId,handleClick,reload,setReload }) {
   if (error) return <p style={{ color: "red" }}>Error: {error}</p>;
 
   return (
-    <div>       
-       <Loading on={loading} />
+    <div className="container">    
+
+            <div className=''>&nbsp;&nbsp;&nbsp;Items:&nbsp;
+        <img src='/img/add.svg' alt='add' onClick={()=>handleClick(0)} className='pointer'/>
+        <Loading on={loading} />
+</div>   
+       
+       <div className='row'>
       {items.map((item) => (
-        <Item key={item.id} item={item} handleClick={handleClick} />
-      ))}
+      <div className="col-md-4 mb-3" key={item.id}>
+        <Item item={item} handleClick={handleClick} />
+      </div>      ))}
+      </div>
     </div>
   );
 }
@@ -55,12 +63,16 @@ export default function ItemList({ parentId,handleClick,reload,setReload }) {
 function Item({ item,handleClick }) {
   return (
     <div className="boxround boxhover">
-       <div className="boxhead">{item.title}</div>
+       <div className="boxhead">{item.title}
+      <img src='/img/edit.svg' alt='add' onClick={()=>handleClick(item.id)} className='pointer'/>
+
+
+       </div>
        <div className='boxbody'>
        <div style={{fontSize: "0.7em"}}>{item.descr}</div>
        <div className="boxrowspace">
       <div>€{item.price}</div>
-      <button onClick={()=>handleClick(item.id)} >...</button>
+      {/* <button onClick={()=>handleClick(item.id)} >...</button> */}
       </div>
       
     </div></div>

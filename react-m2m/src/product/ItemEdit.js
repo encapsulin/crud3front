@@ -2,7 +2,7 @@ import '../misc/stylebox.css';
 import React, { useEffect,useState } from 'react';
 import Loading from '../loading/Loading';
 import { API_BASE_URL } from "../misc/config";
-import Tree from '../navi/Tree'
+import Tree from '../group/Tree'
 import { nestItems } from "../misc/nestItems";
 
 export default function ItemEdit({id,fnHandleOpen,setReload}){
@@ -127,9 +127,13 @@ export default function ItemEdit({id,fnHandleOpen,setReload}){
         </div>
 
         <div className='boxrowspace' style={{marginTop:"10px"}}>
-            <button type="submit" onClick={(e) => handleSubmit(e, "DELETE")} disabled={loading}>Delete</button>
-            <button type="button" onClick={() => fnHandleOpen(false)}>Cancel</button>
-            <button type="submit" onClick={(e) => handleSubmit(e, "POST")} disabled={loading}>Submit</button>
+            <button type="submit" onClick={(e) => handleSubmit(e, "DELETE")} disabled={loading}
+              class="btn btn-danger">Delete</button>
+            <button  onClick={() => fnHandleOpen(false)}
+              type="button" class="btn btn-light"
+              >Cancel</button>
+            <button type="submit" onClick={(e) => handleSubmit(e, "POST")} disabled={loading}
+              class="btn btn-primary">Submit</button>
         </div>
         </form>
     </div>
