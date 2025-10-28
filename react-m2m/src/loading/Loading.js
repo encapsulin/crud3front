@@ -4,5 +4,5 @@ import './loading.css'
 
 export default function Loading({on=true,color=1}){
     if (! on) return null;
-    return <div><img src={color? imgload: imgload_black} className='Apploading'  alt='Apploading'/></div>
+    return <span><img src={color? imgload: imgload_black} className='Apploading'  alt='Apploading'/></span>
 }

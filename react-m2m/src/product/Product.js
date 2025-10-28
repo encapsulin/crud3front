@@ -31,10 +31,9 @@ export default function Product({parentId}){
     const[reload, setReload] = useState(false)
 
     return <div className='boxcol'>
-        <div className='boxhead'> <button onClick={()=>handleClick(0)} >+</button> Products</div>
-        <div className='boxbody'>
+
         <ItemList parentId={parentId} handleClick={handleClick} reload={reload} setReload={setReload}/>
-      </div>
+  
      
     <AppModal props={propsModal} fnHandleOpen={fnHandleOpen}>
          <ItemEdit id={modalId} fnHandleOpen={fnHandleOpen} setReload={setReload}/> 

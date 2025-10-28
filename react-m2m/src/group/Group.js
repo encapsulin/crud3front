@@ -1,16 +1,16 @@
 import '../App.css'
 import '../misc/stylebox.css';
-import Loading from '../loading/Loading'
+import './style.css';
 import React, { useState, useEffect } from 'react';
-import { API_BASE_URL } from "../misc/config";
-import ItemList from './ItemList'
-import { httpGet } from '../misc/httpGet'; 
-import { nestItems } from "../misc/nestItems";
-import ItemEdit from './ItemEdit';
-
+import { API_BASE_URL } from "../misc/config.js";
+import { httpGet } from '../misc/httpGet.js'; 
+import { nestItems } from "../misc/nestItems.js";
+import Loading from '../loading/Loading.js'
+import GroupEdit from './GroupEdit.js';
+import GroupList from './GroupList.js'
 import AppModal from '../AppModal.js';
 
-export default function Navi({ onSelect }){
+export default function Group({ onSelect }){
 
     const [loading, setLoading] = useState(true);
     const [items, setItems] = useState([]);
@@ -49,15 +49,18 @@ export default function Navi({ onSelect }){
     
     if (error) return <p style={{ color: "red" }}>Error: {error}</p>;
  
-    return <div className='boxcol'>
-      <div className='boxhead'><button onClick={()=>handleClickEdit({})}>+</button>Navi</div>
-      <div className='boxbody'>
+    return <div className='box'>
+      <div className='boxrowspace-'>
+        <b>Groups</b> &nbsp;
+        <img src='/img/add.svg' alt='add' onClick={()=>handleClickEdit({})} className='pointer'/>
+        </div>
+      <div >
       <Loading on={loading} />
-      <ItemList items={items} onSelect={onSelect} handleClickEdit={handleClickEdit} />
+      <GroupList items={items} onSelect={onSelect} handleClickEdit={handleClickEdit} />
     </div>
 
     <AppModal props={propsModal} fnHandleOpen={fnHandleOpen}>
-            <ItemEdit item={item} setItem={setItem} fnHandleOpen={fnHandleOpen} setReload={setLoading} items={items}/> 
+            <GroupEdit item={item} setItem={setItem} fnHandleOpen={fnHandleOpen} setReload={setLoading} items={items}/> 
       </AppModal>
     </div>
 

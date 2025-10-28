@@ -1,9 +1,9 @@
 import './App.css';
 import './misc/stylebox.css';
 
-import Navi from './navi/Navi.js'
+import Group from './group/Group.js'
 import Product from './product/Product.js'
-import Order from './order/Order.js'
+// import Order from './order/Order.js'
 
 import React, { useState } from "react";
 
@@ -18,11 +18,11 @@ function App() {
       <header className="App-header">
         <div className='boxrow'>
         <div className='boxcol'>
-          <div className="boxround"><Navi onSelect={setSelectedId} /></div>
-          <div className="boxround"><Order /></div>
+          <div className="boxround-" ><Group onSelect={setSelectedId} /></div>
+          {/* <div className="boxround-"><Order /></div> */}
 
           </div>
-          <div className="boxround">
+          <div className="">
             <Product parentId={selectedId} />
           </div>
         </div>
