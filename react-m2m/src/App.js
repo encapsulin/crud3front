@@ -29,8 +29,8 @@ function App() {
       </header>
       
       <span >CRUD-0.1.6</span>
-
-
+&nbsp;
+Minima tenetur perferendis. Amet nesciunt eveniet non sequi corporis temporibus a.
     </div>
   );
 }
