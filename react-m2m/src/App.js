@@ -3,7 +3,7 @@ import './misc/stylebox.css';
 
 import Group from './group/Group.js'
 import Product from './product/Product.js'
-import Upload from './upload/Upload.js'
+// import Upload from './upload/Upload.js'
 
 import React, { useState } from "react";
 
