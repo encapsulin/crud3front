@@ -11,6 +11,7 @@ export default function ItemEdit({id,fnHandleOpen,setReload}){
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null); 
     const [parents, setParents] = useState([]);
+    // const [file, setFile] = useState(null);
 
     useEffect(() => {
         console.log("ItemEdit id:"+id) 
