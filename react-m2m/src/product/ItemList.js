@@ -52,7 +52,7 @@ export default function ItemList({ parentId,handleClick,reload,setReload }) {
        
        <div className='row'>
       {items.map((item) => (
-      <div className="col-md-4 mb-3" key={item.id}>
+      <div className="col-md-4 mb-1" key={item.id}>
         <Item item={item} handleClick={handleClick} />
       </div>      ))}
       </div>
